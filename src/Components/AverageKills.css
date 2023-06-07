@@ -1,0 +1,43 @@
+.animation {
+    /*  animations */
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(254, 115, 0);
+  }
+  
+  .winner {
+    /*  averageKills > 10 */
+    background-color: rgb(255, 0, 0);
+    animation: winnerAnimation 1s infinite;
+  }
+  
+  .lose {
+    /*  <= 10 */
+    background-color: rgb(85, 255, 0);
+    animation: loseAnimation 1s infinite;
+  }
+  
+  @keyframes winnerAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes loseAnimation {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
