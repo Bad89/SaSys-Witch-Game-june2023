@@ -20,7 +20,7 @@ class Game extends Component {
       { id: 1, name: 'Villager 1', ageOfDeath: 10, yearOfDeath: 12 },
       { id: 2, name: 'Villager 2', ageOfDeath: 13, yearOfDeath: 17 },
       { id: 3, name: 'Villager 3', ageOfDeath: 8, yearOfDeath: 11 },
-      { id: 4, name: "semoga LULUS Amin", ageOfDeath: 100, yearOfDeath:100},
+
     ];
 
     this.setState({ villagers });
@@ -62,8 +62,8 @@ class Game extends Component {
   };
 
   editVillager = (id, updatedVillager) => {
-     
-    
+
+
     const { villagers } = this.state;
     const updatedList = villagers.map((villager) => {
       if (villager.id === id) {
@@ -98,8 +98,10 @@ class Game extends Component {
 
     return (
       <div className="container">
-        <h1>Witch Saga: Return of badeasaputro@gmail.com</h1>
-        <p>Current village status: {witchControlled ? 'Witch Lose / Witch Winner' : 'badeasaputro@gmail.com'}</p>
+        <h1>Witch Saga: Return of <button className="btn btn-primary" onClick={() => window.location.href = "https://pawhike2023.web.app"}>badeasaputro@gmail.com</button></h1>
+
+        {/* <h1>Witch Saga: Return of <a href="https://pawhike2023.web.app" className="btn btn-primary">badasss1989</a></h1> */}
+        <p>Current village status: {witchControlled ? 'DEFEAT a Witch ur Logic' : 'badasss1989'}</p>
 
         <Router>
           <Switch>
